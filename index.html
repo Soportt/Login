@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Iniciar Sesión</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -151,7 +152,7 @@
 <body>
     <div class="login-container">
         <div class="logo">
-            <img src="logo.png" alt="Logo">
+            <img src="/logo.png" alt="Logo">
         </div>
         <form id="login-form">
             <input type="text" id="username" name="username" placeholder="Nombre de usuario o correo" required>
@@ -162,9 +163,9 @@
             <button type="submit">Iniciar Sesión</button>
         </form>
         <div id="message" class="message">¡Inicio de sesión exitoso! Los datos han sido enviados a tu correo.</div>
-        <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+        <a href="https://login-eight-theta-50.vercel.app/recuperar-contrasena" class="forgot-password">¿Olvidaste tu contraseña?</a>
         <div class="signup">
-            ¿No tienes una cuenta? <a href="#">Regístrate</a>
+            ¿No tienes una cuenta? <a href="https://login-eight-theta-50.vercel.app/registro">Regístrate</a>
         </div>
     </div>
     <script>
